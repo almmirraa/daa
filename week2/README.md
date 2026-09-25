@@ -21,4 +21,4 @@ At every step, the algorithm halves the search space. The number of steps needed
 My solution only uses a few variables (`left`, `right`, `mid`), which do not depend on the size of the input array. So the additional memory usage is constant, O(1).
 
 ## 5. Reflection / Improvement
-For a sorted array, there isn't a more efficient approach. O(log n) is the optimal time complexity. The only possible improvements would be minor constant factors (like using a bitwise shift instead of division), but the asymptotic complexity would remain the same.Более эффективного подхода для поиска в **отсортированном** массиве не существует: `O(log n)` — это оптимальная сложность. Улучшить можно только константные факторы (например, использовать битовый сдвиг вместо деления), но асимптотика останется той же.
+For a sorted array, there isn't a more efficient approach. O(log n) is the optimal time complexity. The only possible improvements would be minor constant factors (like using a bitwise shift instead of division), but the asymptotic complexity would remain the same.
