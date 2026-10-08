@@ -41,10 +41,11 @@ Let `n` be the number of nodes in the linked list. We inspect each node's value 
 **Space Complexity: O(1)**
 The algorithm only uses one extra dummy node and a single traversal pointer. Pointers are adjusted directly in memory without supplementary collections or call stacks, giving constant memory $O(1)$.
 
-## 5. Reflection / Improvement
+## 5. Reflection / Improvement 
 This is already the optimal iterative solution. Since this problem is tagged under recursion, it can also be solved recursively:
 ```java
 if (head == null) return null;
 head.next = removeElements(head.next, val);
 return head.val == val ? head.next : head;
+
 However, recursion consumes O(n) space on the call stack and can cause a StackOverflowError on very large lists. The iterative dummy-node approach remains preferred for production use due to its O(1) space guarantee.
