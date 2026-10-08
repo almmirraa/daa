@@ -47,3 +47,4 @@ This is already the optimal iterative solution. Since this problem is tagged und
 if (head == null) return null;
 head.next = removeElements(head.next, val);
 return head.val == val ? head.next : head;
+However, recursion consumes O(n) space on the call stack and can cause a StackOverflowError on very large lists. The iterative dummy-node approach remains preferred for production use due to its O(1) space guarantee.
